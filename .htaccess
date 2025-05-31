@@ -1,0 +1,44 @@
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+<FilesMatch ".(htm|html|css|js|php)$">
+AddDefaultCharset UTF-8
+</FilesMatch>
+<IfModule mod_rewrite.c> 
+    Options -Indexes
+    php_value date.timezone Africa/Sao_Tome
+    	
+	RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^home$ index.html [NC,L]
+    RewriteRule ^login$ login.html [NC,L]
+    RewriteRule ^sign$ sign.html [NC,L]
+    RewriteRule ^about$ about.html [NC,L]
+    RewriteRule ^web-site$ web-site.html [NC,L]
+    RewriteRule ^design$ design.html [NC,L]
+    RewriteRule ^marketing$ marketing.html [NC,L]
+    RewriteRule ^course$ course.php [NC,L]
+    RewriteRule ^project/angotransit$ project/angotransit.html [NC,L]
+    RewriteRule ^blog$ blog.php [NC,L]
+    RewriteRule ^contact$ contact.html [NC,L]
+    RewriteRule ^faqs$ faqs.html [NC,L]
+    RewriteRule ^search$ search.html [NC,L]
+    RewriteRule ^term$ term.html [NC,L]
+    RewriteRule ^checkout$ check.php [NC,L]
+    RewriteRule ^update-pass$ update-pass.html [NC,L]
+    RewriteRule ^portfolio/serafim-pundo$ portfolio/serafim-pundo.html [NC,L]
+    RewriteRule ^portfolio/moisés-kialanda$ portfolio/moisés-kialanda.html [NC,L]
+
+    RewriteRule ^dash$ dash.php [NC,L]
+    RewriteRule ^profiles$ perfil.php [NC,L]
+    RewriteRule ^courses$ atividade.php [NC,L]
+    RewriteRule ^configuration$ data.php [NC,L]
+
+    RewriteRule ^index$ index.php [NC,L]
+    RewriteRule ^course$ course.php [NC,L]
+    
+</IfModule>

@@ -1,0 +1,119 @@
+.add-button{
+    width: 93%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+}
+.add-button div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-left: auto;
+    gap: 1%;
+}
+.add-button button{
+    height: 40px;
+    background-color: var(--main);
+    color: var(--bcg-light);
+    width: 150px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tables-step{
+    margin-top: 5%;
+}
+.subscribe-course{
+    display: none;
+    background-color: var(--bcg-light);
+    width: 50%;
+    padding: 20px;
+}
+.subscribe-course.ok{display: flex;}
+.subscribe-course.ok.notify{
+    width: 80%;
+    margin-top: 5%;
+}
+.subscribe-course>:first-child{
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+.subscribe-course>:first-child:hover{
+    color: red;
+}
+
+.main-inputs .input-simple{
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1%;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   
+    input{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main-inputs textarea{
+    width: 98%;
+    height: 200px;
+    border-radius: 5px;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 1%;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.main-inputs .input {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 1% 0;
+}
+.main-inputs .input p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--main);
+}
+
+.main-inputs .input select {
+    width: 100%;
+    height: 40px;
+    padding: 0 2%;
+    background-color: var(--bcg-light);
+    margin: 1% 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.button-sub{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--bcg-light);
+}
+
+
+@media(max-width: 900px){
+    .subscribe-course{
+        width: 90%;
+    }
+}

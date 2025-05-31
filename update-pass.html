@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Palavra-passe</title>
+    <link rel="shortcut icon" href="./assets/img/logo/faicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="load">
+        <div class="loader">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+        </div>
+    </div>
+    <div class="container-pass">
+        <form action="" class="form-set-pass your-count">
+            <img class="logo" src="./assets/img/logo/logo.png" alt="">
+            <div class="text-contain">
+                <h1 class="title-pass">Esqueceu a senha</h1>
+            </div>
+            <div class="main-inputs">
+                <div class="input">
+                    <input name="email-update-pass" type="email" placeholder="Email">
+                </div>
+                <input type="hidden" name="new-pass" id="new-pass">
+                <p class="set-pass"></p>
+                <button disabled class="button-get-pass">
+                    Obter palavra-passe
+                </button>
+            </div>
+            <p class="option-red">Voltar para o login</p>
+        </form>
+    </div>
+    <script src="./assets/js/alert.js"></script>
+    <script src="./assets/js/up-pass.js"></script>
+    <!--<script src="./assets/js/index-form.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

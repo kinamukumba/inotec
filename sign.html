@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar sua Conta</title>
+    <link rel="shortcut icon" href="./assets/img/logo/faicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="load">
+        <div class="loader">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+        </div>
+    </div>
+    <div class="container-sign">
+        <form action="" class="form-set-sign your-count">
+            <img class="logo" src="./assets/img/logo/logo.png" alt="">
+            <div class="text-contain">
+                <h1 class="title-sign">Cadastrar-se e comece</h1>
+                <p class="text-normal sign">Já tem uma conta? <i>Fazer login</i></p>
+            </div>
+            <div class="main-inputs">
+                <div class="double-input">
+                    <div class="input">
+                        <input name="name-sign" type="text" placeholder="Digite o nome">
+                    </div>
+                    <div class="input">
+                        <input name="subname-sign" type="text" placeholder="Digite o sobrenome">
+                    </div>
+                </div>
+                <div class="double-input">
+                    <div class="input">
+                        <input name="user-sign" type="text" placeholder="Digite o nome de usuário">
+                    </div>
+                    <div class="input">
+                        <input name="phone-sign" type="tel" placeholder="Nº telefone">
+                    </div>
+                </div>
+                <div class="double-input">
+                    <div class="input">
+                        <input name="email-sign" type="email" placeholder="Digite o email">
+                    </div>
+                    <div class="input">
+                        <input name="pass-sign" type="password" id="password" placeholder="Palavra-passe">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="validation-pass">
+                    <p class="length"><i class="fa fa-check" aria-hidden="true"></i> Entre 8 e 15 caracteres</p>
+                    <p class="letter"><i class="fa fa-check" aria-hidden="true"></i> Pelo menos uma letra maiúscula e uma minúscula</p>
+                    <p class="number"><i class="fa fa-check" aria-hidden="true"></i> Pelo menos um número</p>
+                    <p class="special"><i class="fa fa-check" aria-hidden="true"></i> Pelo menos um caractere especial</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" placeholder="#">
+                    <p>Eu concordo com os termos e condições mencionados na página. <i>Termos e Condições</i></p>
+                </div>
+                <button disabled class="button-sign">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    Cadastrar-se
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="./assets/js/alert.js"></script>
+    <script src="./assets/js/index-forms.js"></script>
+    <script src="./assets/js/requires.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

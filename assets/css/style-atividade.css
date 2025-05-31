@@ -1,0 +1,11 @@
+.set-type-event{
+    width: 50%;
+}
+.categoria-event .cat p{
+    width: auto;
+}
+@media(max-width: 1000px){
+    .set-type-event{
+        width: 90%;
+    }
+}

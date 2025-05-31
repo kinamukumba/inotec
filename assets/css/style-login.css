@@ -1,0 +1,414 @@
+body{
+    background-color: var(--main);
+}
+.container-login {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login .form-set-login {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.form-set-login .logo {
+    width: auto;
+    height: 70px;
+    cursor: pointer;
+}
+
+.form-set-login .text-contain {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-set-login .text-contain .title-login {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.form-set-login .text-contain .text-normal {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+}
+
+.text-contain i {
+    font-size: 18px;
+    color: #2590e7;
+    cursor: pointer;
+}
+
+.form-set-login .main-inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.main-inputs .input {
+    width: 99%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1%;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.main-inputs .input input {
+    width: 90%;
+    padding: 0 5%;
+    height: 100%;
+}
+
+.main-inputs .input i {
+    cursor: pointer;
+}
+
+.main-inputs .check {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1%;
+    gap: 3%;
+    cursor: pointer;
+}
+
+.main-inputs .button-login {
+    width: 100%;
+    height: 40px;
+    background-color: var(--bcg-media);
+    color: var(--white);
+    font-size: 15px;
+    gap: 15%;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.form-set-login .option-red {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    margin-right: auto;
+    cursor: pointer;
+    color: #2590e7;
+}
+
+
+
+/*SIGN*/
+.container-sign {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.form-set-sign {
+    width: auto;
+    height: auto;
+    padding: 20px 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+
+.form-set-sign .logo {
+    width: auto;
+    height: 70px;
+    cursor: pointer;
+}
+
+.form-set-sign .text-contain {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-set-sign .text-contain .title-sign {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.form-set-sign .text-contain .text-normal {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+}
+
+.text-contain i {
+    font-size: 18px;
+    color: #2590e7;
+    cursor: pointer;
+}
+
+.form-set-sign .main-inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.main-inputs .double-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+    height: 50px;
+}
+
+.main-inputs .double-input .input {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1%;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.main-inputs .input input {
+    width: 90%;
+    padding: 0 5%;
+    height: 100%;
+}
+
+.main-inputs .input i {
+    cursor: pointer;
+    color: silver;
+}
+
+.main-inputs .check {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1%;
+    gap: 3%;
+    cursor: pointer;
+
+    p {
+        font-size: 15px;
+
+        i {
+            font-size: 15px;
+            color: #2590e7;
+            cursor: pointer;
+        }
+    }
+}
+.check p i:hover{
+  text-decoration: underline;
+}
+
+.main-inputs .button-sign {
+    width: 100%;
+    height: 40px;
+    background-color: var(--bcg-media);
+    color: var(--white);
+    font-size: 15px;
+    gap: 15%;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.form-set-sign .option-red {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    margin-right: auto;
+    cursor: pointer;
+    color: #2590e7;
+}
+
+.validation-pass{
+    padding: 40px 0;
+    width: 100%;
+}
+
+.validation-pass p{
+    color: silver;
+    opacity: .5;
+    padding: 2px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+}
+.validation-pass p.check-pass{
+    color: green;
+    opacity: 1;
+}
+
+.container-pass {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-pass .form-set-pass {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.form-set-pass .logo {
+    width: auto;
+    height: 70px;
+    cursor: pointer;
+}
+
+.form-set-pass .text-contain {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-set-pass .text-contain .title-pass {
+    font-size: 30px;
+    padding: 10px 0;
+}
+.form-set-pass .text-contain .text-normal {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+}
+
+.form-set-pass .main-inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0;
+}
+.form-set-pass .main-inputs input{
+    width: 300px;
+}
+.button-get-pass{
+    margin-top: 1%;
+    width: 100%;
+    height: 40px;
+    background-color: var(--bcg-media);
+    color: var(--white);
+    font-size: 15px;
+    gap: 15%;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .7;
+}
+.set-pass{
+    font-size: 15px;
+    padding: 20px;
+    font-weight: 700;
+    color: green;
+    display: none;
+}
+.set-pass.ok{display: flex;}
+
+.form-set-pass .option-red {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    margin-right: auto;
+    cursor: pointer;
+    color: #2590e7;
+    margin-top: 5%;
+}
+
+
+@media(max-width: 620px) {
+    .container-sign{
+        height: 100vh;
+        margin-top: 25%;
+    }
+    .main-inputs .double-input {
+        width: 80%;
+        flex-direction: column;
+        height: auto;
+        margin: .5% 0;
+    }
+
+    .main-inputs .double-input .input {
+        width: 100%;
+        height: 50px;
+        margin: 1% 0;
+    }
+    .main-inputs .check{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .main-inputs .button-sign{
+        width: 70%;
+    }
+}

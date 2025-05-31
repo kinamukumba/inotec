@@ -1,0 +1,243 @@
+.main-container{
+    height: auto;
+    width: 100%;
+    overflow-y: auto;
+}
+.container-body .section-spoiler{
+    height: 300px;
+}
+.item-section{
+    width: 70%;
+    height: auto;
+    padding: 5px 15%;
+    margin-top: 5%;
+}
+.main-container .section-search{
+    width: 95%;
+    padding: 10px 2.5%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.main-container .option-filter{
+    width: 95%;
+    padding: 10px 2.5%;
+    height: auto;
+    display: none;
+    flex-direction: row;
+    gap: 5%;
+    background-color: rgba(0, 0, 0, 0.02);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.main-container .option-filter.ok{display: flex; animation: open-filter 2s alternate;}
+@keyframes open-filter{
+    0%{
+        height: 0;
+        opacity: 0;
+    }
+    100%{
+        height: auto;
+        opacity: 1;
+    }
+}
+.main-container .option-filter .option{
+    height: 98%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0;
+}
+.option>:nth-child(1){
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--bcg-media);
+    padding-bottom: 20px;
+}
+.option .check-select{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+    height: 40px;
+    cursor: pointer;
+}
+.option .check-select:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.section-search .title-search{
+    font-size: 50px;
+    color: var(--bcg-media);
+}
+
+.section-search .section-filter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-search .section-filter .search-space{
+    width: 50%;
+    background-color: var(--white);
+    height: 45px;
+    margin: 1% 0 2% 0;
+    padding-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.section-search .section-filter .button-filter{
+    width: 150px;
+    padding: 0px 10px;
+    height: 40px;
+    background-color: var(--bcg-media);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+    cursor: pointer;
+    font-weight: 700;
+}
+.button-filter span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: auto;
+}
+.button-filter span i{
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    margin: 12% 0;
+    position: relative;
+    transition: all 2s;
+}
+.button-filter span i::after{
+    content: '';
+    position: absolute;
+    top: -140%;
+    left: 5%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: solid 1px var(--white);
+    transition: all 2s;
+}
+.button-filter span>:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    top: -130%;
+    left: auto;
+    right: 5%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transition: all 2s;
+}
+.section-search .section-filter .button-filter:hover span>:nth-child(1)::after{
+        right: 5%;
+        left: auto;
+}
+.section-search .section-filter .button-filter:hover span>:nth-child(2)::after{
+    left: 5%;
+    right: auto;
+}
+
+.section-search .section-filter .button-filter:hover span>:nth-child(3)::after{
+    right: 5%;
+    left: auto;
+}
+
+
+.select-all-searched{
+    width: 70%;
+    padding: 50px 15%;
+    display: grid;
+    margin: 1% 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+    height: auto;
+    overflow-y: auto;
+}
+.select-all-searched div{
+    width: 90%;
+    padding: 10px 5%;
+    height: auto;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.select-all-searched div:hover{
+    transform: scale(1.05);
+    z-index: 10;
+}
+.select-all-searched div p{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.select-all-searched div span{
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+.select-all-searched div button{
+    width: 75%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--bcg-media);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 1000;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+@media(max-width: 1000px){
+    .item-section{
+        width: 90%;
+        padding: 5px 5%;
+    }
+    .main-container .option-filter{
+        flex-direction: column;
+    }
+    .select-all-searched{
+        width: 90%;
+        padding: 50px 5%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-container .option-filter .option{
+        width: 100%;
+    }
+    .option .check-select{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .section-search .section-filter{
+        flex-direction: column;
+    }
+    .section-search .section-filter .search-space{
+        width: 100%;
+    }
+    .section-search .title-search{font-size: 30px;}
+    .section-search .section-filter .button-filter{
+        width: 90%;
+    }
+    .select-all-searched{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
