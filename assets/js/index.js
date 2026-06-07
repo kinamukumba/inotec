@@ -17,10 +17,10 @@ if (buttons_header && login) {
 
     //SIGN
     buttons_header[1].onclick = () => {
-        window.location.href = 'sign';
+        window.location.href = 'sign.html';
     }
     document.querySelector('.last-elem>:last-child').onclick = () => {
-        window.location.href = 'sign';
+        window.location.href = 'sign.html';
     }
 
 }
@@ -28,16 +28,16 @@ if (buttons_header && login) {
 const buttonsSigns = document.querySelectorAll('.menu-start.menu-sign-stack .buttons-header button');
 if(buttonsSigns[0] && buttonsSigns[1]){
     buttonsSigns[0].onclick = () => {
-        window.location.href = 'login';
+        window.location.href = 'login.html';
     }
     buttonsSigns[1].onclick = () => {
-        window.location.href = 'sign';
+        window.location.href = 'sign.html';
     }
 }
 const buttonUpPass = document.querySelector('.last-elem>:first-child');
 if (buttonUpPass) {
     buttonUpPass.onclick = () => {
-        window.location.href = 'update-pass'
+        window.location.href = 'update-pass.html'
     }
 }
 
@@ -76,24 +76,24 @@ window.onscroll = () => {
 const uxLi = document.querySelectorAll('.header-container .menu-nav .item-nav');
 const logo = document.querySelector('.logo');
 logo.onclick = () => {
-    window.location.href = 'home'
+    window.location.href = 'index.html'
 }
 uxLi[0].onclick = () => {
-    window.location.href = 'home'
+    window.location.href = 'index.html'
 }
 uxLi[1].onclick = () => {
-    window.location.href = 'about'
+    window.location.href = 'about.html'
 }
 
 const uxDrop = uxLi[2].querySelectorAll('.drop-menu .section-drop>:nth-child(2) .section-drop-item');
 uxDrop[0].onclick = () => {
-    window.location.href = 'web-site'
+    window.location.href = 'web-site.html'
 }
 uxDrop[1].onclick = () => {
-    window.location.href = 'design'
+    window.location.href = 'design.html'
 }
 uxDrop[2].onclick = () => {
-    window.location.href = 'marketing'
+    window.location.href = 'marketing.html'
 }
 uxDrop[3].onclick = () => {
     createAlert('Desculpe, esta página está em carregamento...', 'warrir')
@@ -102,7 +102,7 @@ uxDrop[4].onclick = () => {
     createAlert('Desculpe, esta página está em carregamento...', 'warrir')
 }
 uxDrop[5].onclick = () => {
-    window.location.href = 'course'
+    window.location.href = 'course.php'
 }
 uxDrop[6].onclick = () => {
     createAlert('Desculpe, esta página está em carregamento...', 'warrir')
@@ -141,10 +141,10 @@ if (document.querySelector('.context-header button')) {
 }
 
 uxLi[3].onclick = () => {
-    window.location.href = 'blog'
+    window.location.href = 'blog.php'
 }
 uxLi[4].onclick = () => {
-    window.location.href = 'contact'
+    window.location.href = 'contact.html'
 }
 
 
@@ -152,20 +152,20 @@ uxLi[4].onclick = () => {
 const uxMenu = document.querySelectorAll('.menu-start.menu-all-stack .menu-nav .item-nav')
 const uxDropMenu = document.querySelectorAll('.drop-menu-stack .section-drop ul li')
 uxMenu[0].onclick = () => {
-    window.location.href = 'home'
+    window.location.href = 'index.html'
 }
 uxMenu[1].onclick = () => {
-    window.location.href = 'about'
+    window.location.href = 'about.html'
 }
 
 uxDropMenu[0].onclick = () => {
     window.location.href = 'web-site'
 }
 uxDropMenu[1].onclick = () => {
-    window.location.href = 'design'
+    window.location.href = 'desig.htmln'
 }
 uxDropMenu[2].onclick = () => {
-    window.location.href = 'marketing'
+    window.location.href = 'marketing.html'
 }
 uxDropMenu[3].onclick = () => {
     createAlert('Desculpe, esta página está em carregamento...', 'warrir')
@@ -174,7 +174,7 @@ uxDropMenu[4].onclick = () => {
     createAlert('Desculpe, esta página está em carregamento...', 'warrir')
 }
 uxDropMenu[5].onclick = () => {
-    window.location.href = 'course'
+    window.location.href = 'course.php'
 }
 uxDropMenu[6].onclick = () => {
     createAlert('Desculpe, esta página está em carregamento...', 'warrir')
@@ -189,7 +189,7 @@ uxDropMenu[9].onclick = () => {
     createAlert('Desculpe, esta página está em carregamento...', 'warrir')
 }
 uxDropMenu[10].onclick = () => {
-    window.location.href = 'project/angotransit'
+    window.location.href = 'project/angotransit.html'
 }
 uxDropMenu[11].onclick = () => {
     createAlert('Desculpe, esta página está em carregamento...', 'warrir')
@@ -205,20 +205,20 @@ uxDropMenu[14].onclick = () => {
 }
 
 uxMenu[3].onclick = () => {
-    window.location.href = 'blog'
+    window.location.href = 'blog.php'
 }
 uxMenu[4].onclick = () => {
-    window.location.href = 'contact'
+    window.location.href = 'contact.html'
 }
 
 
 const menuSign = document.querySelectorAll('.menu-start.menu-all-stack .buttons-header button');
 if (menuSign[0] && menuSign[1]) {
     menuSign[0].onclick = () => {
-        window.location.href = 'login'
+        window.location.href = 'login.html'
     }
     menuSign[1].onclick = () => {
-        window.location.href = 'sign'
+        window.location.href = 'sign.html'
     }
 }
 
@@ -227,16 +227,16 @@ if (menuSign[0] && menuSign[1]) {
 const uxFooter = document.querySelectorAll('footer section article ul li')
 if (uxFooter[0] && uxFooter[1] && uxFooter[2] && uxFooter[5]) {
     uxFooter[0].onclick = () => {
-        window.location.href = 'home'
+        window.location.href = 'index.html'
     }
     uxFooter[1].onclick = () => {
-        window.location.href = 'about'
+        window.location.href = 'about.html'
     }
     uxFooter[2].onclick = () => {
-        window.location.href = 'faqs'
+        window.location.href = 'faqs.html'
     }
     uxFooter[5].onclick = () => {
-        window.location.href = 'contact'
+        window.location.href = 'contact.html'
     }
 
 }
@@ -252,7 +252,7 @@ document.querySelector('.search-space form button').onclick = (e) => {
     if (input_search_value.value == '') {
         createAlert('Preencha o campo de pesquisa', 'error')
     } else {
-        window.location.href = 'search'
+        window.location.href = 'search.html'
     }
 }
 
@@ -264,7 +264,7 @@ document.querySelector('.menu-start.menu-sign-stack .search-space form button').
     if (input_search_value_menu.value == '') {
         createAlert('Preencha o campo de pesquisa', 'error')
     } else {
-        window.location.href = 'search'
+        window.location.href = 'search.html'
     }
 }
 document.querySelector('.menu-start.menu-all-stack .search-space form button').onclick = (e) => {
@@ -273,7 +273,7 @@ document.querySelector('.menu-start.menu-all-stack .search-space form button').o
     if (input_searchMenuAll.value == '') {
         createAlert('Preencha o campo de pesquisa', 'error')
     } else {
-        window.location.href = 'search'
+        window.location.href = 'search.html'
     }
 }
 
@@ -285,11 +285,11 @@ const uxPortfolio = document.querySelectorAll('.cart-people>:nth-child(4)');
 if (uxPortfolio[0] && uxPortfolio[2]) {
     uxPortfolio[0].onclick = () => {
         //window.location.href = 'portfolio/serafim-pundo.html'
-        window.open('portfolio/serafim-pundo', '_blank');
+        window.open('portfolio/serafim-pundo.html', '_blank');
     }
     uxPortfolio[2].onclick = () => {
         //window.location.href = 'portfolio/moisés-kialanda.html'
-        window.open('portfolio/moisés-kialanda', '_blank');
+        window.open('portfolio/moisés-kialanda.html', '_blank');
     }
 }
 
@@ -299,13 +299,13 @@ if (uxPortfolio[0] && uxPortfolio[2]) {
 const cartService = document.querySelectorAll('.service-carts .select-cart .cart-item-more article');
 if (cartService[0] && cartService[1] && cartService[2]) {
     cartService[0].onclick = () => {
-        window.location.href = 'web-site'
+        window.location.href = 'web-site.html'
     }
     cartService[1].onclick = () => {
-        window.location.href = 'design'
+        window.location.href = 'design.html'
     }
     cartService[2].onclick = () => {
-        window.location.href = 'marketing'
+        window.location.href = 'marketing.html'
     }
 }
 const buttonDepoim = document.querySelectorAll('.section-depoiment-client span button');
